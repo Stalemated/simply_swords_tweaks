@@ -33,6 +33,14 @@ configurations {
 dependencies {
     forge "net.minecraftforge:forge:$rootProject.forge_version"
 
+    // S-Lib
+    modImplementation "com.stalemated.lib:s-lib-forge:${rootProject.s_lib_version}"
+
+    // YACL
+    modRuntimeOnly "dev.isxander:yet-another-config-lib:${rootProject.yacl_version}-forge"
+    forgeRuntimeLibrary "org.quiltmc.parsers:gson:0.3.0"
+    forgeRuntimeLibrary "org.quiltmc.parsers:json:0.3.0"
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionForge')
 }

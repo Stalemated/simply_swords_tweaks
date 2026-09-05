@@ -30,6 +30,15 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
 
+    // S-Lib
+    modImplementation "com.stalemated.lib:s-lib-fabric:${rootProject.s_lib_version}"
+
+    // YACL
+    modRuntimeOnly "dev.isxander:yet-another-config-lib:${rootProject.yacl_version}-fabric"
+
+    // ModMenu
+    modImplementation "com.terraformersmc:modmenu:${rootProject.modmenu_version}"
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 }
