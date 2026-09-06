@@ -41,6 +41,21 @@ dependencies {
     forgeRuntimeLibrary "org.quiltmc.parsers:gson:0.3.0"
     forgeRuntimeLibrary "org.quiltmc.parsers:json:0.3.0"
 
+    // Fzzy Config
+    modRuntimeOnly "me.fzzyhmstrs:fzzy_config:${rootProject.fzzy_config_version}+forge"
+
+    // Architectury API
+    modRuntimeOnly "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
+
+    // Simply Swords
+    modRuntimeOnly "curse.maven:simply-swords-659887:${rootProject.simply_swords_forge_file_id}"
+    // Simply Tooltips
+    modRuntimeOnly "curse.maven:simply-tooltips-1475755:${rootProject.simply_tooltips_forge_file_id}"
+
+    // Puffish Skills
+    modRuntimeOnly "curse.maven:puffish-skills-835091:${rootProject.puffish_skills_file_id_forge_0_17_3}"
+    modRuntimeOnly "curse.maven:puffish-attributes-991341:${rootProject.puffish_attributes_file_id_forge}"
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionForge')
 }

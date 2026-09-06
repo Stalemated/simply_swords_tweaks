@@ -36,6 +36,40 @@ dependencies {
     // YACL
     modRuntimeOnly "dev.isxander:yet-another-config-lib:${rootProject.yacl_version}-fabric"
 
+    // Fzzy Config
+    modRuntimeOnly "me.fzzyhmstrs:fzzy_config:${rootProject.fzzy_config_version}"
+
+    // Architectury API
+    modRuntimeOnly "dev.architectury:architectury-fabric:${rootProject.architectury_api_version}"
+
+    // Simply Swords
+    modRuntimeOnly "curse.maven:simply-swords-659887:${rootProject.simply_swords_fabric_file_id}"
+    // Simply Tooltips
+    modRuntimeOnly "curse.maven:simply-tooltips-1475755:${rootProject.simply_tooltips_fabric_file_id}"
+    // Simply Skills
+    modRuntimeOnly "curse.maven:simply-skills-890301:${rootProject.simply_skills_file_id}"
+
+    // Puffish Skills
+    modRuntimeOnly "curse.maven:puffish-skills-835091:${rootProject.puffish_skills_file_id_fabric_0_17_3}"
+    // Puffish Attributes
+    modRuntimeOnly "curse.maven:puffish-attributes-991341:${rootProject.puffish_attributes_file_id_fabric}"
+
+    // Spell Engine
+    modRuntimeOnly "maven.modrinth:spell-engine:${rootProject.spell_engine_version}"
+    // Spell Power
+    modRuntimeOnly "maven.modrinth:spell-power:${rootProject.spell_power_version}"
+    // Player Animator
+    modRuntimeOnly "dev.kosmx.player-anim:player-animation-lib-fabric:${rootProject.player_animator_version}"
+    // Cloth Config
+    modRuntimeOnly "me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}"
+    // Tiny Config
+    modRuntimeOnly "com.github.ZsoltMolnarrr:TinyConfig:${rootProject.tiny_config_version}"
+    // Trinkets
+    modRuntimeOnly "curse.maven:trinkets-341284:${rootProject.trinkets_file_id}"
+    // Cardinal Components API
+    modRuntimeOnly "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${rootProject.cardinal_components_api_version}"
+    modRuntimeOnly "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${rootProject.cardinal_components_api_version}"
+
     // ModMenu
     modImplementation "com.terraformersmc:modmenu:${rootProject.modmenu_version}"
 
