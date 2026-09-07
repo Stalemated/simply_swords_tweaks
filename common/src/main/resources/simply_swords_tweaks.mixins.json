@@ -3,9 +3,20 @@
   "package": "com.stalemated.simplytweaks.mixin",
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
+  "plugin": "com.stalemated.simplytweaks.mixin.compat.SimplySwordsTweaksMixinPlugin",
   "client": [
+    "client.BattleStandardDarkRendererMixin",
+    "client.BattleStandardRendererMixin",
+    "client.ModernFieldRendererMixin"
   ],
   "mixins": [
+    "BattleStandardDarkEntityMixin",
+    "BattleStandardEntityMixin",
+    "ElementalVortexEffectMixin",
+    "HelperMethodsMixin",
+    "LivingEntityMixin",
+    "NullificationPowerMixin",
+    "compat.rebalance.RebalanceDamageMixin"
   ],
   "injectors": {
     "defaultRequire": 1
