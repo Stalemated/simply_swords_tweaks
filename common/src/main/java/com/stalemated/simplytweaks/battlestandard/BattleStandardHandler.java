@@ -28,4 +28,18 @@ public final class BattleStandardHandler {
 
         return config.sunfire_strength_amplifier;
     }
+
+    public static int getSunfireAoeRadius() {
+        SSTConfig config = ConfigManager.getActiveConfig();
+        if (config == null) return 6;
+
+        return config.sunfire_aoe_radius;
+    }
+
+    public static int getNullificationAoeRadius() {
+        SSTConfig config = ConfigManager.getActiveConfig();
+        if (config == null) return 6;
+
+        return config.nullification_aoe_radius;
+    }
 }
