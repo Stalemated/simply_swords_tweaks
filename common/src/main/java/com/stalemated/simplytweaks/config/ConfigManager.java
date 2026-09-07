@@ -46,7 +46,7 @@ public class ConfigManager {
             SYNC_CHANNEL,
             SSTConfig.class,
             ServerConfigPermissions.OP_ONLY,
-            (source, dest) -> dest.copyFrom(source)
+            (source, dest) -> dest.map(source)
     );
 
     public static boolean configLoadFailed = false;
