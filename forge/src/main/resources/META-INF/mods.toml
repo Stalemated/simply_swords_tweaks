@@ -1,17 +1,21 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/Stalemated/simply_swords_tweaks/issues"
+license = "MIT"
 
 [[mods]]
 modId = "simply_swords_tweaks"
 version = "${version}"
 displayName = "Simply Swords Tweaks"
-authors = "Me!"
+authors = "Stalemated"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Adds extra tweaks, settings and bug fixes to Simply Swords.
 '''
-#logoFile = ""
+logoFile = "assets/simply_swords_tweaks/icon.png"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/simply-swords-tweaks"
+
+[[mixins]]
+config = "simply_swords_tweaks.mixins.json"
 
 [[dependencies.simply_swords_tweaks]]
 modId = "forge"
@@ -24,5 +28,26 @@ side = "BOTH"
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simply_swords_tweaks]]
+modId = "s_lib"
+mandatory = true
+versionRange = "[2.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simply_swords_tweaks]]
+modId = "yet_another_config_lib_v3"
+mandatory = true
+versionRange = "[3.6.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simply_swords_tweaks]]
+modId = "simplyswords"
+mandatory = true
+versionRange = "[1.70.0,)"
 ordering = "NONE"
 side = "BOTH"

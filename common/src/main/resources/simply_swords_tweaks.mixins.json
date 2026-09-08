@@ -14,6 +14,7 @@
     "BattleStandardEntityMixin",
     "ElementalVortexEffectMixin",
     "HelperMethodsMixin",
+    "IcewhisperSwordItemMixin",
     "LivingEntityMixin",
     "NullificationPowerMixin",
     "compat.rebalance.RebalanceDamageMixin"
