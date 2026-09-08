@@ -1,0 +1,61 @@
+{
+  "sst.config_screen.title": "Configuración de Simply Swords Tweaks",
+  "sst.config_screen.op_required": "\n§4§lAdvertencia:§f §cDebes ser un operador del servidor para editar esto.§f",
+
+  "sst.category.battle_standards": "Estandartes de Batalla",
+  "sst.category.battle_standards.desc": "Ajustes, multiplicadores de efectos y configuraciones de rango para las entidades de §6Estandartes de Batalla§f.",
+
+  "sst.group.banner_general": "Ajustes Generales de Estandartes",
+  "sst.option.banner_healing_allowed": "Permitir Curación de Estandartes",
+  "sst.option.banner_healing_allowed.desc": "Permite que las entidades de §6Estandartes de Batalla§f reciban curación de cualquier fuente.\n\nSi se desactiva, los estandartes no podrán ser curados de ninguna manera.",
+
+  "sst.group.galeforce": "Galeforce (Enigma)",
+  "sst.option.galeforce_haste_amplifier": "Amplificador de Prisa",
+  "sst.option.galeforce_haste_amplifier.desc": "Nivel del amplificador del efecto §6Prisa§f otorgado al propietario cerca de §6Galeforce§f.",
+  "sst.option.galeforce_haste_radius": "Radio de Prisa",
+  "sst.option.galeforce_haste_radius.desc": "Radio en bloques alrededor de §6Galeforce§f en el que el propietario recibe el efecto de §6Prisa§f.",
+  "sst.option.galeforce_aoe_radius": "Radio de Atracción AoE",
+  "sst.option.galeforce_aoe_radius.desc": "Radio en bloques alrededor de §6Galeforce§f para atraer enemigos cercanos y aplicar los efectos del aura.",
+  "sst.option.galeforce_pain_amplifier": "Amplificador de Dolor",
+  "sst.option.galeforce_pain_amplifier.desc": "Nivel del amplificador del efecto §6Dolor§f aplicado a los objetivos atrapados en el vórtice de §6Galeforce§f.",
+
+  "sst.group.abyssal_standard": "Abyssal Standard (Harbinger)",
+  "sst.option.abyssal_standard_haste_amplifier": "Amplificador de Prisa",
+  "sst.option.abyssal_standard_haste_amplifier.desc": "Nivel del amplificador del efecto §6Prisa§f otorgado al propietario cerca de §6Abyssal Standard§f.",
+  "sst.option.abyssal_standard_haste_radius": "Radio de Prisa",
+  "sst.option.abyssal_standard_haste_radius.desc": "Radio en bloques alrededor de §6Abyssal Standard§f en el que el propietario recibe el efecto de §6Prisa§f.",
+  "sst.option.abyssal_standard_aoe_radius": "Radio AoE",
+  "sst.option.abyssal_standard_aoe_radius.desc": "Radio en bloques alrededor de §6Abyssal Standard§f para buffs de equipo, aura de daño y efectos negativos para enemigos.",
+  "sst.option.abyssal_standard_aoe_haste_amplifier": "Amplificador de Prisa AoE para Aliados",
+  "sst.option.abyssal_standard_aoe_haste_amplifier.desc": "Nivel del amplificador del efecto §6Prisa§f otorgado a los aliados cercanos dentro del rango.",
+  "sst.option.abyssal_standard_aoe_slowness_amplifier": "Amplificador de Lentitud AoE",
+  "sst.option.abyssal_standard_aoe_slowness_amplifier.desc": "Nivel del amplificador del efecto §6Lentitud§f aplicado a los enemigos dentro del rango.",
+
+  "sst.group.sunfire": "Righteous Standard (Sunfire)",
+  "sst.option.sunfire_aoe_radius": "Radio AoE",
+  "sst.option.sunfire_aoe_radius.desc": "Radio en bloques alrededor de §6Sunfire§f para Fuerza para el equipo, curación y aura de daño.",
+  "sst.option.sunfire_strength_amplifier": "Amplificador de Fuerza",
+  "sst.option.sunfire_strength_amplifier.desc": "Nivel del amplificador del efecto §6Fuerza§f otorgado a los aliados cercanos dentro del rango.",
+
+  "sst.group.nullification": "Nullification Standard (Netherfused Gem)",
+  "sst.option.nullification_aoe_radius": "Radio AoE",
+  "sst.option.nullification_aoe_radius.desc": "Radio en bloques alrededor de §6Nullification Standard§f para remover efectos positivos de enemigos y efectos negativos de aliados.",
+  "sst.option.nullification_prevent_battle_fatigue": "Prevenir Fatiga de Batalla",
+  "sst.option.nullification_prevent_battle_fatigue.desc": "Evita que se le aplique el efecto negativo de Fatiga de Batalla al invocador al invocar un §6Nullification Standard§f.\n\nActiva en su lugar un sistema interno de cooldown, impidiendo que los jugadores reinicien el cooldown bebiendo leche o limpiando sus efectos.",
+  "sst.option.nullification_cooldown": "Tiempo de Cooldown (Segundos)",
+  "sst.option.nullification_cooldown.desc": "Duración del cooldown en segundos antes de poder invocar §6Nullification Standard§f nuevamente.\n\nSolo funciona cuando §6Prevenir Fatiga de Batalla§f está activado.",
+
+  "sst.category.bug_fixes": "Corrección de Bugs",
+  "sst.category.bug_fixes.desc": "Corrección para varios bugs en §6Simply Swords§f.",
+  "sst.option.fix_status_effect_stacking": "Corregir Límite de Efectos",
+  "sst.option.fix_status_effect_stacking.desc": "Corrige el bug donde un estandarte mantiene un amplificador más alto del configurado si se obtuvo por una fuente externa (ej. §6Enigma§f reteniendo la Prisa XV de §6Twisted Blade§f cerca de §6Galeforce§f).",
+  "sst.option.fix_elemental_vortex_leak": "Corregir Fuga de Estado en Vórtice Elemental",
+  "sst.option.fix_elemental_vortex_leak.desc": "Corrige que §6Galeforce§f ataque a su dueño mientras este se encuentra bajo el efecto de §6Vórtice Elemental§f.",
+  "sst.option.icewhisper_slowness_cap": "Límite de Lentitud de Icewhisper",
+  "sst.option.icewhisper_slowness_cap.desc": "Limita el amplificador máximo del efecto negativo de §6Lentitud§f que §6Icewhisper§f puede acumular en los objetivos.\n\nCorrige el bug de Simply Swords donde la Lentitud se puede acumular infinitamente.\n\n§6-1§f: Desactiva el fix (mantiene la acumulación infinita)",
+
+  "sst.category.compatibility": "Compatibilidad",
+  "sst.category.compatibility.desc": "Integraciones y balance con otros mods.",
+  "sst.option.rebalance_compat_enabled": "Activar Escalado de ReBalance",
+  "sst.option.rebalance_compat_enabled.desc": "Aplica el multiplicador de daño PvP y el umbral de reducción global de §6ReBalance§f al daño infligido por el aura de los §6Estandartes de Batalla§f contra jugadores."
+}
