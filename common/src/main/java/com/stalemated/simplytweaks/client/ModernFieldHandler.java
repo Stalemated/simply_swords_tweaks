@@ -4,6 +4,7 @@ import com.stalemated.simplytweaks.battlestandard.BattleStandardHandler;
 import net.minecraft.client.render.Frustum;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.Entity;
 import net.sweenus.simplyswords.client.renderer.ModernFieldRenderer;
 import net.sweenus.simplyswords.entity.BattleStandardEntity;
 
@@ -37,7 +38,7 @@ public final class ModernFieldHandler {
         if (!ModernFieldRenderer.isEnabled()) return;
 
         if ("nullification".equals(entity.getStandardType())) {
-            renderNullification(matrices, vertexConsumers, entity.age);
+            renderNullification(matrices, vertexConsumers, ((Entity) entity).age);
         }
     }
 
@@ -57,7 +58,7 @@ public final class ModernFieldHandler {
 
         if ("nullification".equals(entity.getStandardType())) {
             double cullingRadius = BattleStandardHandler.getNullificationAoeRadius() + EXTRA_CULLING_RADIUS;
-            return frustum.isVisible(entity.getBoundingBox().expand(cullingRadius, 1.0, cullingRadius));
+            return frustum.isVisible(((Entity) entity).getBoundingBox().expand(cullingRadius, 1.0, cullingRadius));
         }
 
         return false;
