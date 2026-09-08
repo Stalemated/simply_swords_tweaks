@@ -73,6 +73,11 @@ dependencies {
     // ModMenu
     modImplementation "com.terraformersmc:modmenu:${rootProject.modmenu_version}"
 
+    // Necronomicon API
+    modRuntimeOnly "maven.modrinth:necronomicon:${rootProject.necronomicon_version}-fabric"
+    // Rebalance
+    modRuntimeOnly "curse.maven:rebalance-940586:${rootProject.rebalance_file_id}"
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 }
