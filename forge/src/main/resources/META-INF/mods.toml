@@ -34,7 +34,7 @@ side = "BOTH"
 [[dependencies.simply_swords_tweaks]]
 modId = "s_lib"
 mandatory = true
-versionRange = "[2.1.0,)"
+versionRange = "[2.1.1,)"
 ordering = "NONE"
 side = "BOTH"
 
