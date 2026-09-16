@@ -41,11 +41,26 @@ dependencies {
     forgeRuntimeLibrary "org.quiltmc.parsers:gson:0.3.0"
     forgeRuntimeLibrary "org.quiltmc.parsers:json:0.3.0"
 
-    // Fzzy Config
-    modRuntimeOnly "me.fzzyhmstrs:fzzy_config:${rootProject.fzzy_config_version}+forge"
-
     // Architectury API
-    modRuntimeOnly "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
+    modImplementation "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
+
+    // Fzzy Config
+    modImplementation ("me.fzzyhmstrs:fzzy_config:${rootProject.fzzy_config_version}+forge") {
+        transitive = false
+    }
+    modImplementation "thedarkcolour:kfflang:${rootProject.kotlinforforge_version}"
+    modImplementation "thedarkcolour:kfflib:${rootProject.kotlinforforge_version}"
+    modImplementation "thedarkcolour:kffmod:${rootProject.kotlinforforge_version}"
+    forgeRuntimeLibrary "org.jetbrains.kotlin:kotlin-stdlib:2.0.20"
+    forgeRuntimeLibrary "org.jetbrains.kotlin:kotlin-reflect:2.0.20"
+    forgeRuntimeLibrary "blue.endless:jankson:1.2.3"
+    forgeRuntimeLibrary "net.peanuuutz.tomlkt:tomlkt-jvm:${rootProject.tomlkt_version}"
+    forgeRuntimeLibrary "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.3"
+    forgeRuntimeLibrary "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.10.2"
+
+    // MixinExtras (required by Puffish Attributes on Forge runtime)
+    forgeRuntimeLibrary "io.github.llamalad7:mixinextras-common:0.4.1"
+    modRuntimeOnly "io.github.llamalad7:mixinextras-forge:0.4.1"
 
     // Simply Swords
     modRuntimeOnly "curse.maven:simply-swords-659887:${rootProject.simply_swords_forge_file_id}"
@@ -62,6 +77,8 @@ dependencies {
 
 processResources {
     inputs.property 'version', project.version
+
+    from project(':common').sourceSets.main.resources
 
     filesMatching('META-INF/mods.toml') {
         expand version: inputs.properties.version
