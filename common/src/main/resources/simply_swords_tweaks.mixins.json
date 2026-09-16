@@ -3,6 +3,7 @@
   "package": "com.stalemated.simplytweaks.mixin",
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
+  "refmap": "simply_swords_tweaks-common.refmap.json",
   "plugin": "com.stalemated.simplytweaks.mixin.compat.SimplySwordsTweaksMixinPlugin",
   "client": [
     "client.BattleStandardDarkRendererMixin",
