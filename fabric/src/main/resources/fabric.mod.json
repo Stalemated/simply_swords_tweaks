@@ -19,9 +19,6 @@
     "main": [
       "com.stalemated.simplytweaks.fabric.SimplySwordsTweaksFabric"
     ],
-    "client": [
-      "com.stalemated.simplytweaks.fabric.client.SimplySwordsTweaksFabricClient"
-    ],
     "modmenu": [
       "com.stalemated.simplytweaks.fabric.compat.modmenu.ModMenuIntegration"
     ]
@@ -34,7 +31,7 @@
     "minecraft": "~1.20.1",
     "java": ">=17",
     "fabric-api": "*",
-    "s_lib": ">=2.1.1+1.20.1",
+    "s_lib": ">=3.0.0+1.20.1",
     "simplyswords": ">=1.70.0-1.20.1"
   },
   "suggests": {
